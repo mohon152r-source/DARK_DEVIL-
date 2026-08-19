@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // ⚠️ পরের স্টেপে এখানে আপনার MongoDB লিংক বসাবেন
-const MONGO_URI = "আপনার_MONGODB_লিংক_এখানে_বসান"; 
+const MONGO_URI = "mongodb+srv://billamohon:Shakib1234@cluster0.detwxzd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log("✅ DB Connected"))

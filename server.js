@@ -9,9 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // ⚠️ পরের স্টেপে এখানে আপনার MongoDB লিংক বসােন
-const MONGO_URI = "mongodb://billamohon:Shakib1234@cluster0-shard-00-00.detwxzd.mongodb.net:27017,cluster0-shard-00-01.detwxzd.mongodb.net:27017,cluster0-shard-00-02.detwxzd.mongodb.net:27017/?ssl=true&replicaSet=atlas-i6u2os-shard-0&authSource=admin&retryWrites=true&w=majority";
-
-mongoose.connect(MONGO_URI)
+const MONGO_URI = "mongodb+srv://billamohon:Shakib1234@cluster0.detwxzd.mongodb.net/blackfox?retryWrites=true&w=majority";
   .then(() => console.log("✅ DB Connected"))
   .catch(err => console.log(err));
 
